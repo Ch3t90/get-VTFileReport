@@ -1,17 +1,15 @@
-# get-VTFileReport
-- Use PowerShell to get VirusTotal report for an array of hashes.  
+# get-VTFR
+- Use PowerShell to get VirusTotal report for a .csv file with FileName/FileHash pairs.  
 - This API is rate limited to 4 submissions per minute.  
 - API documentation: https://developers.virustotal.com/reference#file-report
 
 ## To use this script:  
-- Line 10: Enter your API key(Get your own VT API key here: https://www.virustotal.com/gui/join-us).  
-- Line 25: Enter the hashes of the files you want to search for unless you will be using from the CLI.
+- Line 25: Enter your API key(Get your own VT API key here: https://www.virustotal.com/gui/join-us).  
 
-## To from the CLI:   
-- -h is for hash  
+## To from the CLI: 
 - Example:  
 ```
-.\get-VTFileReport.ps1 -h ba4038fd20e474c047be8aad5bfacdb1bfc1ddbe12f803f473b7918d8d819436
+.\get-VTFileReport.ps1 .\hashes.csv
 ```
 ## The following information is returned on the screen:
 - Resource: the sha256 of what was submitted
