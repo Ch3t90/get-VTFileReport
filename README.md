@@ -22,9 +22,7 @@ PS C:\temp> copy .\get-VTFR.psm1 $Env:ProgramFiles\WindowsPowerShell\Modules\get
 
 - Line 25: Enter your API key 
   - Sign up for your own [VirusTotal API key](https://www.virustotal.com/gui/join-us). 
-- Mandatory parameter:
-  - -h is for hash.
-  - Comma separated for multiples.
+  
 - Examples:  
 
 ```PowerShell
